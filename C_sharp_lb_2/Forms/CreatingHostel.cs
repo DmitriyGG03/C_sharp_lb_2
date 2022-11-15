@@ -6,9 +6,9 @@ namespace C_sharp_lb_2
     public partial class CreatingHostel : Form
     {
         bool tr1 = false, tr2 = false, tr3 = false, tr4 = false;
-        //Скоротити адрес до проектного
-        string picOK = @"C:\\Users\\Dimchik\\source\repos\\C_sharp_lb_2\\C_sharp_lb_2\\Pictures\\PicOK.png";
-        string picDislike = @"C:\\Users\\Dimchik\\source\repos\\C_sharp_lb_2\\C_sharp_lb_2\\Pictures\\PicDislike.png";
+        
+        string picOK = @"..\..\..\Pictures\PicOK.png";
+        string picDislike = @"..\..\..\Pictures\PicDislike.png";
 
         public CreatingHostel()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_sharp_lb_2.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,13 @@ namespace C_sharp_lb_2
         private void bt_addCanteen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_hostelManager_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageHostels manageStudents = new ManageHostels();
+            manageStudents.Show();
         }
     }
 }

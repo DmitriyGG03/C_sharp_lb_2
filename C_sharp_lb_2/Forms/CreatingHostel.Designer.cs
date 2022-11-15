@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreatingHostel));
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_univName = new System.Windows.Forms.TextBox();
-            this.pb_1 = new System.Windows.Forms.PictureBox();
-            this.lb_univName = new System.Windows.Forms.Label();
-            this.lb_hostelAddress = new System.Windows.Forms.Label();
-            this.pb_2 = new System.Windows.Forms.PictureBox();
-            this.tb_hostelAddress = new System.Windows.Forms.TextBox();
             this.bt_OK = new System.Windows.Forms.Button();
             this.bt_Cancel = new System.Windows.Forms.Button();
             this.lb_staffNumber = new System.Windows.Forms.Label();
@@ -43,10 +38,16 @@
             this.lb_roomsNumber = new System.Windows.Forms.Label();
             this.pb_4 = new System.Windows.Forms.PictureBox();
             this.tb_roomsNumber = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_2)).BeginInit();
+            this.tb_hostelAddress = new System.Windows.Forms.TextBox();
+            this.pb_2 = new System.Windows.Forms.PictureBox();
+            this.lb_hostelAddress = new System.Windows.Forms.Label();
+            this.tb_univName = new System.Windows.Forms.TextBox();
+            this.pb_1 = new System.Windows.Forms.PictureBox();
+            this.lb_univName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,74 +62,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Введіть дані";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tb_univName
-            // 
-            this.tb_univName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_univName.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_univName.Location = new System.Drawing.Point(83, 83);
-            this.tb_univName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_univName.Multiline = true;
-            this.tb_univName.Name = "tb_univName";
-            this.tb_univName.Size = new System.Drawing.Size(400, 65);
-            this.tb_univName.TabIndex = 1;
-            this.tb_univName.TextChanged += new System.EventHandler(this.tb_1_TextChanged);
-            // 
-            // pb_1
-            // 
-            this.pb_1.Image = global::C_sharp_lb_2.Properties.Resources.PicDislike;
-            this.pb_1.Location = new System.Drawing.Point(10, 83);
-            this.pb_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb_1.Name = "pb_1";
-            this.pb_1.Size = new System.Drawing.Size(65, 65);
-            this.pb_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_1.TabIndex = 2;
-            this.pb_1.TabStop = false;
-            // 
-            // lb_univName
-            // 
-            this.lb_univName.AutoSize = true;
-            this.lb_univName.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_univName.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_univName.Location = new System.Drawing.Point(10, 55);
-            this.lb_univName.Name = "lb_univName";
-            this.lb_univName.Size = new System.Drawing.Size(189, 26);
-            this.lb_univName.TabIndex = 5;
-            this.lb_univName.Text = "Назва університету";
-            // 
-            // lb_hostelAddress
-            // 
-            this.lb_hostelAddress.AutoSize = true;
-            this.lb_hostelAddress.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_hostelAddress.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_hostelAddress.Location = new System.Drawing.Point(10, 160);
-            this.lb_hostelAddress.Name = "lb_hostelAddress";
-            this.lb_hostelAddress.Size = new System.Drawing.Size(187, 26);
-            this.lb_hostelAddress.TabIndex = 8;
-            this.lb_hostelAddress.Text = "Адреса гуртожитку";
-            // 
-            // pb_2
-            // 
-            this.pb_2.Image = global::C_sharp_lb_2.Properties.Resources.PicDislike;
-            this.pb_2.Location = new System.Drawing.Point(10, 188);
-            this.pb_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb_2.Name = "pb_2";
-            this.pb_2.Size = new System.Drawing.Size(65, 65);
-            this.pb_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_2.TabIndex = 7;
-            this.pb_2.TabStop = false;
-            // 
-            // tb_hostelAddress
-            // 
-            this.tb_hostelAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_hostelAddress.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_hostelAddress.Location = new System.Drawing.Point(83, 188);
-            this.tb_hostelAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_hostelAddress.Multiline = true;
-            this.tb_hostelAddress.Name = "tb_hostelAddress";
-            this.tb_hostelAddress.Size = new System.Drawing.Size(400, 65);
-            this.tb_hostelAddress.TabIndex = 6;
-            this.tb_hostelAddress.TextChanged += new System.EventHandler(this.tb_hostelAddress_TextChanged);
             // 
             // bt_OK
             // 
@@ -233,6 +166,74 @@
             this.tb_roomsNumber.TabIndex = 14;
             this.tb_roomsNumber.TextChanged += new System.EventHandler(this.tb_roomsNumber_TextChanged);
             // 
+            // tb_hostelAddress
+            // 
+            this.tb_hostelAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_hostelAddress.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_hostelAddress.Location = new System.Drawing.Point(83, 188);
+            this.tb_hostelAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_hostelAddress.Multiline = true;
+            this.tb_hostelAddress.Name = "tb_hostelAddress";
+            this.tb_hostelAddress.Size = new System.Drawing.Size(400, 65);
+            this.tb_hostelAddress.TabIndex = 6;
+            this.tb_hostelAddress.TextChanged += new System.EventHandler(this.tb_hostelAddress_TextChanged);
+            // 
+            // pb_2
+            // 
+            this.pb_2.Image = global::C_sharp_lb_2.Properties.Resources.PicDislike;
+            this.pb_2.Location = new System.Drawing.Point(10, 188);
+            this.pb_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb_2.Name = "pb_2";
+            this.pb_2.Size = new System.Drawing.Size(65, 65);
+            this.pb_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_2.TabIndex = 7;
+            this.pb_2.TabStop = false;
+            // 
+            // lb_hostelAddress
+            // 
+            this.lb_hostelAddress.AutoSize = true;
+            this.lb_hostelAddress.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lb_hostelAddress.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_hostelAddress.Location = new System.Drawing.Point(10, 160);
+            this.lb_hostelAddress.Name = "lb_hostelAddress";
+            this.lb_hostelAddress.Size = new System.Drawing.Size(187, 26);
+            this.lb_hostelAddress.TabIndex = 8;
+            this.lb_hostelAddress.Text = "Адреса гуртожитку";
+            // 
+            // tb_univName
+            // 
+            this.tb_univName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_univName.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_univName.Location = new System.Drawing.Point(83, 83);
+            this.tb_univName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_univName.Multiline = true;
+            this.tb_univName.Name = "tb_univName";
+            this.tb_univName.Size = new System.Drawing.Size(400, 65);
+            this.tb_univName.TabIndex = 1;
+            this.tb_univName.TextChanged += new System.EventHandler(this.tb_1_TextChanged);
+            // 
+            // pb_1
+            // 
+            this.pb_1.Image = global::C_sharp_lb_2.Properties.Resources.PicDislike;
+            this.pb_1.Location = new System.Drawing.Point(10, 83);
+            this.pb_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb_1.Name = "pb_1";
+            this.pb_1.Size = new System.Drawing.Size(65, 65);
+            this.pb_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_1.TabIndex = 2;
+            this.pb_1.TabStop = false;
+            // 
+            // lb_univName
+            // 
+            this.lb_univName.AutoSize = true;
+            this.lb_univName.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lb_univName.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_univName.Location = new System.Drawing.Point(10, 55);
+            this.lb_univName.Name = "lb_univName";
+            this.lb_univName.Size = new System.Drawing.Size(189, 26);
+            this.lb_univName.TabIndex = 5;
+            this.lb_univName.Text = "Назва університету";
+            // 
             // CreatingHostel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -255,17 +256,18 @@
             this.Controls.Add(this.pb_1);
             this.Controls.Add(this.tb_univName);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 800);
             this.MinimumSize = new System.Drawing.Size(406, 397);
             this.Name = "CreatingHostel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CreatingHostel";
-            ((System.ComponentModel.ISupportInitialize)(this.pb_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_2)).EndInit();
+            this.Text = "Додавання гуртожитку";
             ((System.ComponentModel.ISupportInitialize)(this.pb_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,12 +276,6 @@
         #endregion
 
         private Label label1;
-        private TextBox tb_univName;
-        private PictureBox pb_1;
-        private Label lb_univName;
-        private Label lb_hostelAddress;
-        private PictureBox pb_2;
-        private TextBox tb_hostelAddress;
         private Button bt_OK;
         private Button bt_Cancel;
         private Label lb_staffNumber;
@@ -288,5 +284,11 @@
         private Label lb_roomsNumber;
         private PictureBox pb_4;
         private TextBox tb_roomsNumber;
+        private TextBox tb_hostelAddress;
+        private PictureBox pb_2;
+        private Label lb_hostelAddress;
+        private TextBox tb_univName;
+        private PictureBox pb_1;
+        private Label lb_univName;
     }
 }
