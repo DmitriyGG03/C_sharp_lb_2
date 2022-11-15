@@ -16,5 +16,23 @@ namespace C_sharp_lb_2
         {
             InitializeComponent();
         }
+        private void bt_exit_Click(object sender, EventArgs e)
+        {         
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show("Ви впевнені, що хочете вийти?", "Вихід", buttons, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.Yes) Application.Exit();
+        }
+
+        private void bt_CreateHostel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreatingHostel newHostel = new CreatingHostel();
+            newHostel.Show();
+        }
+
+        private void bt_addCanteen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

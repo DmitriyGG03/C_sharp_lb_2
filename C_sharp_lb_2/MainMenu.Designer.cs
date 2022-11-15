@@ -31,118 +31,177 @@
             this.bt_CreateHostel = new System.Windows.Forms.Button();
             this.Main_label1 = new System.Windows.Forms.Label();
             this.topPanel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.bt_addStudents = new System.Windows.Forms.Button();
+            this.bt_delStudents = new System.Windows.Forms.Button();
+            this.bt_hostelInfo = new System.Windows.Forms.Button();
+            this.bt_rooms = new System.Windows.Forms.Button();
+            this.bt_addCanteen = new System.Windows.Forms.Button();
+            this.bt_exit = new System.Windows.Forms.Button();
+            this.bt_profitInfo = new System.Windows.Forms.Button();
             this.topPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_CreateHostel
             // 
-            this.bt_CreateHostel.BackColor = System.Drawing.Color.SandyBrown;
-            this.bt_CreateHostel.Location = new System.Drawing.Point(12, 88);
+            this.bt_CreateHostel.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_CreateHostel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_CreateHostel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bt_CreateHostel.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_CreateHostel.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_CreateHostel.Location = new System.Drawing.Point(10, 66);
+            this.bt_CreateHostel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CreateHostel.Name = "bt_CreateHostel";
-            this.bt_CreateHostel.Size = new System.Drawing.Size(458, 56);
+            this.bt_CreateHostel.Size = new System.Drawing.Size(462, 42);
             this.bt_CreateHostel.TabIndex = 0;
             this.bt_CreateHostel.Text = "Створити новий гуртожиток";
             this.bt_CreateHostel.UseVisualStyleBackColor = false;
+            this.bt_CreateHostel.Click += new System.EventHandler(this.bt_CreateHostel_Click);
             // 
             // Main_label1
             // 
-            this.Main_label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Main_label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Main_label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Main_label1.Font = new System.Drawing.Font("Segoe UI Emoji", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Main_label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Main_label1.Location = new System.Drawing.Point(158, 9);
+            this.Main_label1.ForeColor = System.Drawing.Color.Green;
+            this.Main_label1.Location = new System.Drawing.Point(175, 9);
             this.Main_label1.Name = "Main_label1";
-            this.Main_label1.Size = new System.Drawing.Size(163, 63);
+            this.Main_label1.Size = new System.Drawing.Size(129, 47);
             this.Main_label1.TabIndex = 1;
             this.Main_label1.Text = "Меню";
             // 
             // topPanel1
             // 
-            this.topPanel1.BackColor = System.Drawing.Color.Chocolate;
+            this.topPanel1.BackColor = System.Drawing.Color.LightGreen;
             this.topPanel1.Controls.Add(this.Main_label1);
             this.topPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel1.Location = new System.Drawing.Point(0, 0);
+            this.topPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.topPanel1.Name = "topPanel1";
-            this.topPanel1.Size = new System.Drawing.Size(482, 82);
+            this.topPanel1.Size = new System.Drawing.Size(484, 62);
             this.topPanel1.TabIndex = 2;
             // 
-            // button2
+            // bt_addStudents
             // 
-            this.button2.Location = new System.Drawing.Point(12, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(458, 56);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_addStudents.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_addStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_addStudents.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bt_addStudents.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_addStudents.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_addStudents.Location = new System.Drawing.Point(10, 112);
+            this.bt_addStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_addStudents.Name = "bt_addStudents";
+            this.bt_addStudents.Size = new System.Drawing.Size(462, 42);
+            this.bt_addStudents.TabIndex = 3;
+            this.bt_addStudents.Text = "Додати студентів до гуртожитку";
+            this.bt_addStudents.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // bt_delStudents
             // 
-            this.button3.Location = new System.Drawing.Point(12, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(458, 56);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt_delStudents.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_delStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_delStudents.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_delStudents.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_delStudents.Location = new System.Drawing.Point(10, 158);
+            this.bt_delStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_delStudents.Name = "bt_delStudents";
+            this.bt_delStudents.Size = new System.Drawing.Size(462, 42);
+            this.bt_delStudents.TabIndex = 4;
+            this.bt_delStudents.Text = "Видалити студентів з гуртожитку";
+            this.bt_delStudents.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // bt_hostelInfo
             // 
-            this.button4.Location = new System.Drawing.Point(12, 274);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(458, 56);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bt_hostelInfo.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_hostelInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_hostelInfo.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_hostelInfo.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_hostelInfo.Location = new System.Drawing.Point(10, 204);
+            this.bt_hostelInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_hostelInfo.Name = "bt_hostelInfo";
+            this.bt_hostelInfo.Size = new System.Drawing.Size(462, 42);
+            this.bt_hostelInfo.TabIndex = 5;
+            this.bt_hostelInfo.Text = "Вивести інформацію про гуртожиток";
+            this.bt_hostelInfo.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // bt_rooms
             // 
-            this.button5.Location = new System.Drawing.Point(12, 336);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(458, 56);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bt_rooms.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_rooms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_rooms.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_rooms.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_rooms.Location = new System.Drawing.Point(10, 250);
+            this.bt_rooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_rooms.Name = "bt_rooms";
+            this.bt_rooms.Size = new System.Drawing.Size(462, 42);
+            this.bt_rooms.TabIndex = 6;
+            this.bt_rooms.Text = "Змінити кількість кімнат в гуртожитку";
+            this.bt_rooms.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // bt_addCanteen
             // 
-            this.button6.Location = new System.Drawing.Point(12, 398);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(458, 56);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.bt_addCanteen.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_addCanteen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_addCanteen.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_addCanteen.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_addCanteen.Location = new System.Drawing.Point(10, 296);
+            this.bt_addCanteen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_addCanteen.Name = "bt_addCanteen";
+            this.bt_addCanteen.Size = new System.Drawing.Size(462, 42);
+            this.bt_addCanteen.TabIndex = 7;
+            this.bt_addCanteen.Text = "Додати їдальню до гуртожитку";
+            this.bt_addCanteen.UseVisualStyleBackColor = false;
+            this.bt_addCanteen.Click += new System.EventHandler(this.bt_addCanteen_Click);
             // 
-            // button7
+            // bt_exit
             // 
-            this.button7.Location = new System.Drawing.Point(12, 460);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(458, 56);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.bt_exit.BackColor = System.Drawing.Color.ForestGreen;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_exit.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_exit.Location = new System.Drawing.Point(10, 388);
+            this.bt_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.Size = new System.Drawing.Size(462, 42);
+            this.bt_exit.TabIndex = 8;
+            this.bt_exit.Text = "Вийти";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
+            // bt_profitInfo
+            // 
+            this.bt_profitInfo.BackColor = System.Drawing.Color.LimeGreen;
+            this.bt_profitInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_profitInfo.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_profitInfo.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_profitInfo.Location = new System.Drawing.Point(10, 342);
+            this.bt_profitInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_profitInfo.Name = "bt_profitInfo";
+            this.bt_profitInfo.Size = new System.Drawing.Size(462, 42);
+            this.bt_profitInfo.TabIndex = 9;
+            this.bt_profitInfo.Text = "Вивести інформацію про доходи за період";
+            this.bt_profitInfo.UseVisualStyleBackColor = false;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(482, 553);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(484, 439);
+            this.Controls.Add(this.bt_profitInfo);
+            this.Controls.Add(this.bt_exit);
+            this.Controls.Add(this.bt_addCanteen);
+            this.Controls.Add(this.bt_rooms);
+            this.Controls.Add(this.bt_hostelInfo);
+            this.Controls.Add(this.bt_delStudents);
+            this.Controls.Add(this.bt_addStudents);
             this.Controls.Add(this.topPanel1);
             this.Controls.Add(this.bt_CreateHostel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(500, 478);
+            this.MinimumSize = new System.Drawing.Size(500, 478);
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Студентський кампус";
             this.topPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -154,11 +213,12 @@
         private Button bt_CreateHostel;
         private Label Main_label1;
         private Panel topPanel1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
+        private Button bt_addStudents;
+        private Button bt_delStudents;
+        private Button bt_hostelInfo;
+        private Button bt_rooms;
+        private Button bt_addCanteen;
+        private Button bt_exit;
+        private Button bt_profitInfo;
     }
 }

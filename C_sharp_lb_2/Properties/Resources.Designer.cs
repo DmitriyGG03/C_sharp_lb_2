@@ -59,5 +59,15 @@ namespace C_sharp_lb_2.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PicDislike {
+            get {
+                object obj = ResourceManager.GetObject("PicDislike", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
