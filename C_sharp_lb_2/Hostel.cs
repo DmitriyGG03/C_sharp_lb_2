@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace Hostels;
-public class Hostel
+public class Hostel : ICloneable
 {
     private int roomsNumber;
     private int studentAmount;
@@ -30,7 +32,7 @@ public class Hostel
         get { return roomsNumber; }
         set
         {
-            if (value > 1 && value < 1000) roomsNumber = value;
+            if (value >= 0 && value < 1000) roomsNumber = value;
             else throw new Exception("Incorrect number of rooms");
         }
     }
@@ -62,8 +64,26 @@ public class Hostel
         profit -= StuffNumber * 5000;
         if (Canteen)
         {
-            profit += (hostelProfit / 5);
+            profit += (profit / 5);
         }
         hostelProfit = profit;
+    }
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append($"Назва університету:\t{universityName}\n");
+        sb.Append($"Адреса гуртожитку:\t{hostelAddress}\n");
+        sb.Append($"Кількість працівників:\t{StuffNumber}\n");
+        sb.Append($"Кількість кімнат:\t\t{RoomsNumber}\n");
+        sb.Append($"Кількість студентів:\t{StudentAmount}\n");
+        if (Canteen) sb.Append($"Присутня столова\n");
+        else sb.Append($"Cтолова відсутня\n");
+        sb.Append($"Прибуток:\t\t{hostelProfit}\n");
+        return sb.ToString();
+    }
+
+    public object Clone()
+    {
+        return new Hostel (ID, universityName, hostelAddress, StuffNumber, RoomsNumber);
     }
 }

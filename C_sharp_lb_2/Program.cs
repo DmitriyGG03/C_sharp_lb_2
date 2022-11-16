@@ -6,22 +6,27 @@ using System.Windows.Forms;
 using C_sharp_lb_2;
 using Hostels;
 
+
+
 public static class HostelExtension
 {
-    public static int AddCanteen(this Hostel hstl)
+    public static bool AddCanteen(this Hostel hstl)
     {
-        if (hstl == null)
-        {
-            return 1;
-        }
-        else if (!hstl.Canteen)
+        if (!hstl.Canteen)
         {
             hstl.Canteen = true;
             hstl.StuffNumber += 5;
             hstl.CalcProfit();
-            return 0;
+            return true;
         }
-        else return 2;
+        else return false;
+    }
+}
+
+public static class Extensions
+{
+    public static bool find<T>(this List<T> list, T target) {
+        return list.Contains(target);
     }
 }
 

@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using Hostels;
 
- public static class Campus
+public static class Campus
 {
+    public static string picOK = @"..\..\..\Pictures\PicOK.png";
+    public static string picDislike = @"..\..\..\Pictures\PicDislike.png";
+
     public static List<Hostel> hostels = new List<Hostel>(0);
     public static List<int> DeleteHostels = new List<int>(0);
 
@@ -33,6 +36,43 @@ using Hostels;
             }
             return max + 1;
         }
-    } 
+    }
 
+    public static bool switchImageString(string str)
+    {
+        if (str != "")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public static bool switchImageInt(string str, out int num)
+    {
+        if (str != "" && int.TryParse(str, out num) && num >= 0)
+        {
+            return true;
+        }
+        else
+        {
+            num = -1;
+            return false;
+        }
+    }
+
+    public static bool FindingHostel(int id, out Hostel? hostel)
+    {
+        hostel = hostels.Find(h => h.ID == id);
+        if (hostel == null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 }

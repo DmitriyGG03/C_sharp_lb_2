@@ -99,6 +99,7 @@
             this.tb_studNumber.Name = "tb_studNumber";
             this.tb_studNumber.Size = new System.Drawing.Size(400, 65);
             this.tb_studNumber.TabIndex = 12;
+            this.tb_studNumber.TextChanged += new System.EventHandler(this.tb_studNumber_TextChanged);
             // 
             // lb_hostelID
             // 
@@ -132,6 +133,7 @@
             this.tb_hostelID.Name = "tb_hostelID";
             this.tb_hostelID.Size = new System.Drawing.Size(400, 65);
             this.tb_hostelID.TabIndex = 9;
+            this.tb_hostelID.TextChanged += new System.EventHandler(this.tb_hostelID_TextChanged);
             // 
             // bt_Cancel
             // 
@@ -149,6 +151,7 @@
             this.bt_Cancel.TabIndex = 16;
             this.bt_Cancel.Text = "Відміна";
             this.bt_Cancel.UseVisualStyleBackColor = false;
+            this.bt_Cancel.Click += new System.EventHandler(this.bt_Cancel_Click);
             // 
             // bt_addStudents
             // 
@@ -165,6 +168,7 @@
             this.bt_addStudents.TabIndex = 15;
             this.bt_addStudents.Text = "Додати студентів";
             this.bt_addStudents.UseVisualStyleBackColor = false;
+            this.bt_addStudents.Click += new System.EventHandler(this.bt_addStudents_Click);
             // 
             // bt_delStudents
             // 
@@ -182,6 +186,7 @@
             this.bt_delStudents.TabIndex = 17;
             this.bt_delStudents.Text = "Видалити студентів";
             this.bt_delStudents.UseVisualStyleBackColor = false;
+            this.bt_delStudents.Click += new System.EventHandler(this.bt_delStudents_Click);
             // 
             // bt_showInfo
             // 
@@ -198,6 +203,7 @@
             this.bt_showInfo.TabIndex = 23;
             this.bt_showInfo.Text = "Вивести інформацію";
             this.bt_showInfo.UseVisualStyleBackColor = false;
+            this.bt_showInfo.Click += new System.EventHandler(this.bt_showInfo_Click);
             // 
             // bt_addCanteen
             // 
@@ -214,6 +220,7 @@
             this.bt_addCanteen.TabIndex = 24;
             this.bt_addCanteen.Text = "Додати їдальню";
             this.bt_addCanteen.UseVisualStyleBackColor = false;
+            this.bt_addCanteen.Click += new System.EventHandler(this.bt_addCanteen_Click);
             // 
             // gb_studNumber
             // 
@@ -256,6 +263,7 @@
             this.tb_roomNumber.Name = "tb_roomNumber";
             this.tb_roomNumber.Size = new System.Drawing.Size(400, 65);
             this.tb_roomNumber.TabIndex = 12;
+            this.tb_roomNumber.TextChanged += new System.EventHandler(this.tb_roomNumber_TextChanged);
             // 
             // pb_3
             // 
@@ -284,6 +292,7 @@
             this.bt_delRooms.TabIndex = 17;
             this.bt_delRooms.Text = "Видалити кімнати";
             this.bt_delRooms.UseVisualStyleBackColor = false;
+            this.bt_delRooms.Click += new System.EventHandler(this.bt_delRooms_Click);
             // 
             // bt_addRooms
             // 
@@ -300,6 +309,7 @@
             this.bt_addRooms.TabIndex = 15;
             this.bt_addRooms.Text = "Додати кімнати";
             this.bt_addRooms.UseVisualStyleBackColor = false;
+            this.bt_addRooms.Click += new System.EventHandler(this.bt_addRooms_Click);
             // 
             // gb_stuffNumber
             // 
@@ -327,6 +337,7 @@
             this.tb_stuffNumber.Name = "tb_stuffNumber";
             this.tb_stuffNumber.Size = new System.Drawing.Size(400, 65);
             this.tb_stuffNumber.TabIndex = 12;
+            this.tb_stuffNumber.TextChanged += new System.EventHandler(this.tb_stuffNumber_TextChanged);
             // 
             // pb_4
             // 
@@ -355,6 +366,7 @@
             this.bt_delStuff.TabIndex = 17;
             this.bt_delStuff.Text = "Видалити робітників";
             this.bt_delStuff.UseVisualStyleBackColor = false;
+            this.bt_delStuff.Click += new System.EventHandler(this.bt_delStuff_Click);
             // 
             // bt_addStuff
             // 
@@ -371,6 +383,7 @@
             this.bt_addStuff.TabIndex = 15;
             this.bt_addStuff.Text = "Додати робітників";
             this.bt_addStuff.UseVisualStyleBackColor = false;
+            this.bt_addStuff.Click += new System.EventHandler(this.bt_addStuff_Click);
             // 
             // rb_year
             // 
@@ -414,6 +427,7 @@
             this.bt_calcProfit.TabIndex = 31;
             this.bt_calcProfit.Text = "Порахувати";
             this.bt_calcProfit.UseVisualStyleBackColor = false;
+            this.bt_calcProfit.Click += new System.EventHandler(this.bt_calcProfit_Click);
             // 
             // rb_month
             // 
@@ -460,6 +474,7 @@
             this.MinimumSize = new System.Drawing.Size(1151, 675);
             this.Name = "ManageHostels";
             this.Text = "ManageStudents";
+            this.Load += new System.EventHandler(this.ManageHostels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_1)).EndInit();
             this.gb_studNumber.ResumeLayout(false);
